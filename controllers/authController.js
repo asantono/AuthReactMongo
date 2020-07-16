@@ -54,6 +54,7 @@ const encryptPw = async (password) => {
 
 exports.signup = async (req, res) => {
   const { email, password } = req.body;
+  console.log(req.body);
   const pw = await encryptPw(password);
   try {
     const newUser = await User.create({
@@ -72,6 +73,7 @@ exports.login = async (req, res) => {
   const { email, password } = req.body;
   try {
     const user = await User.findOne({ email }).select("+password");
+    if (!user) return res.status(400).json({ message: "Login Failed" });
     const compared = await bcrypt.compare(password, user.password);
     compared
       ? sendToken(user, 200, req, res)

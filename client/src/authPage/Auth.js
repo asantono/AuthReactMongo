@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import { useDispatch } from "react-redux";
-import API from "../utils/API";
 import { signupUser, loginUser } from "../redux/actions/authActions";
 
 const Auth = () => {

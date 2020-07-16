@@ -36,7 +36,7 @@ export const logoutUser = () => async (dispatch) => {
   }
 };
 
-export const getSecret = async () => {
+export const getSecret = () => async (dispatch) => {
   try {
     const res = await API.get("api/v1/auth/secretcontent");
     console.log(res);
