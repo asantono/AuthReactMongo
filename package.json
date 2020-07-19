@@ -1,4 +1,11 @@
 {
+  "name": "AuthReactMongo",
+  "contributors": [
+    "Anthony Santonocito <emailpapasanto@gmail.com> (https://www.youtube.com/channel/UC3b871DqOlA5tKbizv4J6mg/)"
+  ],
+  "homepage": "https://github.com/asantono/AuthReactMongo",
+  "version": "1.0.0",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
