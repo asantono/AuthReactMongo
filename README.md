@@ -13,6 +13,8 @@ AuthReactMongo is an open source MERN stack template with built in authenticatio
 
 ### Installation
 
+Quick-Start Video Guide: https://www.youtube.com/watch?v=7KQTiQAwYSU
+
 Clone or download the repository
 
 In the .env file of the main folder:
